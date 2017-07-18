@@ -14,7 +14,9 @@ button.addEventListener('click', () => {
     console.log(data.results)
     for (var i = 0; i < data.length; i++) {
       let item = data[i]
+      document.createElement('li')
+      list.appendChild(li)
+      let liContent = document.createTextNode.data.item
     }
   })
 })
-//
