@@ -1,0 +1,19 @@
+README
+
+The goal of this project is to enable a recipe search via the Recipe Puppy
+API. A basic html and css framework is created, and the API data is parsed
+based upon user keyword search.
+
+Visually, the website should contain a search box in the header, with a
+horizontal rule line immediately beneath. Search results will be displayed
+with thumbnail images in a series of boxes below the horizontal rule (the
+wireframe indicates 8 boxes).
+
+Functionally, the strategy is to set up a fetch to the API. This data is in
+an array. The array is then parsed via a loop. The user will enter a keyword
+in the search box. This search term must be appended to the following URL:
+http://www.recipepuppy.com/api/?q=search-term (where "search-term" is replaced
+by the user-entered keyword). The keyword will then be located in the array
+using "array.prorotype.includes". Should the keyword be located within any
+element of the API's array, the element will be added to index.html via
+appendChild.
