@@ -1,0 +1,39 @@
+// **the below is the html section for the project audio player***
+
+// <section class="player">
+//       <audio class="music-player" controls="controls" src="http://audio.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/ca/7f/28/ca7f2818-514a-5a6f-ac63-bd420da38a0c/mzaf_3303110486375225949.plus.aac.p.m4a"></audio>
+//       <div id=“search-input”>
+//         <h5>Now Playing:The Train - Noise Ratchet</h5>
+//       </div>
+// listener function changes src
+// <script>
+function myNewSrc() {
+  //the below TagName needs to be replaced by the preview URL result of the user-selected
+  //eventListener from the search results
+  var myAudio = document.getElementsByTagName('audio')[0]
+  //the below url needs to be replaced by the token for the user-selected
+  //preview url from the api
+  myAudio.src = `$unknownToken`
+  //may be able to trash the two below attributes
+  myAudio.load()
+  myAudio.play()
+}
+// add a listener function to the ended event... may be able to trash this
+//it would control what happens when the audio track ends
+function myAddListener() {
+  var myAudio = document.getElementsByTagName('audio')[0]
+  myAudio.addEventListener('ended', myNewSrc, false)
+}
+//the below is stolen from the sample website as an html example to work with
+//the above functions
+//     </script>
+// </head>
+// <body onload="myAddListener()">
+//     <audio controls
+//            src="http://homepage.mac.com/qt4web/A-chord.m4v">
+//     </audio>
+// </body>
+// </html>
+//The previous example works on both Safari on the desktop and Safari on iOS,
+//as the load() and play() methods are enabled even on cellular networks once
+//the user has started playing the first media element.
