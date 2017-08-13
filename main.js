@@ -32,21 +32,3 @@ button.addEventListener('click', () => {
     }
   })
 })
-
-// let uls = document.createElement('ul')
-//         let li = document.createElement('li')
-//         let liNail = document.createElement('img')
-//         let a = document.createElement('a')
-//         a.href = data.results[i].href
-//         li.textContent = data.results[i].title
-//         liNail.src = data.results[i].thumbnail
-//           if (data.results[i].thumbnail === '') {
-//             liNail.src = 'http://via.placeholder.com/100x100'
-//           }
-//         section.appendChild(uls)
-//         uls.appendChild(a)
-//         a.appendChild(li)
-//         li.appendChild(liNail)
-//       }
-//     })
-// })
